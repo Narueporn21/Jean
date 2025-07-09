@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Favorite Flowers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+<style>
+	body {
+		background-color: lavender;
+		margin: 0
+	}
+
+	header {
+		background-color: lavenderblush;
+		padding: 8px;
+		text-align: center;
+		border-left: 5px dashed #D1B6D7;
+		border-right: 5px dashed #D1B6D7;
+		border-top: 5px dashed #D1B6D7;
+	}
+
+	h1 {
+		font-family: "Rubik Bubbles", system-ui;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 50px;
+		color: #5d4a6e; /* Added a color for better contrast */
+	}
+
+	nav {
+		background-color: lightsteelblue;
+	}
+
+	nav ul {
+		display: flex;
+		gap: 20px;
+		list-style: none;
+		justify-content: center;
+		margin: 0;
+		padding: 10px 0; /* Add padding to navigation */
+		border-bottom: 5px dashed #D1B6D7;
+		border-left: 5px dashed #D1B6D7;
+		border-right: 5px dashed #D1B6D7;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-family: "Rubik Bubbles", system-ui;
+		color: #3b304c; /* Added a color for better contrast */
+		font-size: 20px;
+	}
+
+	/* Main content area using Flexbox */
+	.flower-gallery {
+		display: flex;
+		flex-wrap: wrap; /* Allow items to wrap to the next line */
+		justify-content: center; /* Center items horizontally */
+		gap: 40px; /* Space between flower items */
+		padding: 40px 20px; /* Padding around the gallery */
+	}
+
+	.flower-item {
+		display: flex;
+		flex-direction: column; /* Stack image and text vertically */
+		align-items: center; /* Center content within each item */
+		text-align: center;
+		max-width: 250px; /* Limit the width of each item */
+		margin-bottom: 20px; /* Space between rows */
+	}
+
+	.flower-item img {
+		border-radius: 120px;
+		width: 200px;
+		height: 250px;
+		object-fit: cover; /* Ensures image covers the area without distortion */
+		box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Better shadow color */
+		transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+	}
+
+	.flower-item img:hover {
+		transform: scale(1.05); /* Slightly enlarge image on hover */
+	}
+
+	.flower-item p {
+		font-family: "Rubik Bubbles", system-ui;
+		font-size: 45px; /* Adjusted font size to fit better */
+		margin-top: 15px; /* Space between image and text */
+		color: #5d4a6e; /* Consistent text color */
+	}
+
+	/* Media queries for responsiveness */
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 40px;
+		}
+		nav ul {
+			flex-direction: column; /* Stack nav items vertically on smaller screens */
+			gap: 10px;
+		}
+		.flower-gallery {
+			gap: 20px;
+			padding: 20px 10px;
+		}
+		.flower-item img {
+			width: 180px;
+			height: 220px;
+		}
+		.flower-item p {
+			font-size: 35px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		h1 {
+			font-size: 30px;
+		}
+		.flower-item img {
+			width: 150px;
+			height: 180px;
+		}
+		.flower-item p {
+			font-size: 30px;
+		}
+	}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>Top 5 Flowers That I Like</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Info</a></li>
+		</ul>
+	</nav>
+
+	<main class="flower-gallery">
+		<a href="https://www.bloomandwild.com/the-blog/lily-flower-meaning" target="_blank" class="flower-item">
+			<img src="lily.jpg" alt="lily">
+			<p>Lily</p>
+		</a>
+
+		<a href="https://www.bloomandwild.com/the-blog/the-meaning-of-roses" target="_blank" class="flower-item">
+			<img src="rose.jpg" alt="rose">
+			<p>Rose</p>
+		</a>
+
+		<a href="https://www.loveyouflower.com/en/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B5-%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%97%E0%B8%B4%E0%B8%A7%E0%B8%A5%E0%B8%B4%E0%B8%9B/?srsltid=AfmBOoqU1JMezxP0jMXTPoZU1c8oSfZmXg5wna8-Y8SI0rLjjQ0brI2E" target="_blank" class="flower-item">
+			<img src="tulip.jpg" alt="tulip">
+			<p>Tulip</p>
+		</a>
+
+		<a href="https://www.bloomandwild.com/the-blog/daisy-flower-meaning" target="_blank" class="flower-item">
+			<img src="daisy.jpg" alt="daisy">
+			<p>Daisy</p>
+		</a>
+
+		<a href="https://www.dharmashop.com/blogs/news/the-spiritual-meaning-of-lavender?srsltid=AfmBOooIX7v2iotl6f1KyrvR0lsJihk7z2OBtYa_WzMvBjhvwfCDDdhC" target="_blank" class="flower-item">
+			<img src="lavender.jpg" alt="lavender">
+			<p>Lavender</p>
+		</a>
+	</main>
+
+</body>
+</html>
